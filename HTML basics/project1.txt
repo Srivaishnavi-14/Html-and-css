@@ -1,0 +1,145 @@
+<!DOCUTYPE html>
+<html>
+<head>
+<title> vaishnavi  </title>
+<style>
+.myDiv{
+border: 3px outset black;
+background: pink;
+text-align: center;
+}
+table{
+font-family:arial;
+border-collapse:collapse;
+width:50%;
+}
+th,td
+{
+border:1px solid lightblue;
+text-align:left;
+padding:10px;
+
+}
+tr:nth-child(even) {
+  background-color:#dddddd;
+
+}
+</style>
+</head>
+<body >
+<div class="myDiv">
+<h1>WELCOME</h1>
+<h4>This is my first project</h4>
+</div>
+<br>
+<h2>paragraph tag</h2>
+<p>Sri Vaishnavi R</p>
+<br>
+<p>Horizontal Ruler  <dfn>HR</dfn></p>
+<hr>
+<br>
+<h3>preformatted Tag</h3>
+<pre style="text-align:right;float:right;">Vaishu Vaishu</pre>
+
+<h4 style="display:inline">strickout tag:</h4>
+<p style="display:inline"><del>Vaishnavi</del></p><br>
+
+<h4 style="display:inline"> Monospace tag:</h4>
+<p style="display:inline"><kbd>web pages</kbd></p><br>
+
+<h4 style="display:inline">Subscript and superscript:</h4>
+<p style="display:inline">vaishu<sup>vaishu</sup><sub>vaishu</sub></p><br>
+
+<h4 style="display:inline">Insertion tag:</h4>
+<p style="display:inline"><ins>age:18</ins></p><br>
+
+<h4 style="display:inline">Citetation tag:</h4>
+<p style="display:inline"><cite>LIKE</cite> Movies and songs</p><br>
+
+<h4 style="display:inline">Definiton tag:</h4>
+<p style="display:inline"><dfn>songs&movies</dfn></p><br>
+
+<h4 style="display:inline">Mailto tag:</h4>
+<footer style="display:inline"><a href="mailto:vijayvaisu42@gmail.com">vaishuramesh@gmail.com</a></footer><br>
+
+<h4 style="display:inline">Definition List Tag:</h4>
+<dl><dt>Tags(Define)</dt>
+<dd>Tags are used in html to creat page.</dd></dl>
+
+<h4><i>Address:</i></h4>
+<p><i>20/21,Azee Shahib Street,Ramasamypuram,Dindigul</i></p>
+
+<h3>The ul element</h3>
+<h3>List Tags</h3>
+
+<ol type="A">
+<li>drinks</li>
+<ul>  
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+
+</ul>
+<li>breakfast</li>
+
+<ul style="list-style-type:square">
+  <li>poori</li>
+  <li>idly</li>
+  <li>dosa</li>
+
+</ul>
+
+<li>lunch</li>
+
+<ul style="list-style-type:disc">
+<li>chicken briyani</li>
+<li>veg briyani</li>
+<li>meals</li>
+</ul>
+</ol>
+</ol>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+<input type="file" name="file" id="file">
+<input type="submit" value="Upload file" name="submit">
+</form>
+</body>
+</html>

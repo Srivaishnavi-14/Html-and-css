@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Rotation of Earth </title>
+</head>
+<body>
+<h1>my first video</h1>
+<video height="500" width="1000" controls>
+<source src="C:\Users\LENOVO\Downloads\earth.mp4" type="video/mp4">
+<source src="C:\Users\LENOVO\Downloads\earth.ogg" type="video/ogg">
+your browser does not support the video tag
+</video>
+</body>
+</html>

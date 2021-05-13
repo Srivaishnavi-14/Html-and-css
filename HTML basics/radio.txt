@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> displaying radio buttons </title>
+</head>
+<body>
+<h2>radio icons</h2>
+<p> please select your community </P>
+<input type="radio" id="mbc" name="community" value="mbc">
+<label for="mbc">mbc</label><br>
+<input type="radio" id="bc" name="community" value="bc">
+<label for="bc">bc</label><br>
+<input type="radio" id="obc" name="community" value="obc"
+<label for="obc">obc</label><br>
+<input type="radio" id="others" name="community" value="others"
+<label for="others">others</label><br>
+<br>
+<p> please select course </p>
+<input type="radio" id="bsc ct" name="course" value="bsc ct"
+<label for="bsc ct">bsc ct</label><br>
+<input type="radio" id="bsc it" name="course" value="bsc it"
+<label for="bsc it">bsc it</label><br>
+<input type="radio" id="bsc cs" name="course" value="bsc cs"
+<label for="bsc cs">bsc cs</label><br>
+<input type="radio" id="msc software" name="course" value="msc software"
+<label for="msc software">msc software</label><br>
+<input type="radio" id="bsc zoology" name="course" value="bsc zoology"
+<label for="zoology">zoo</label><br>
+<br>
+<input type="submit" value="submit"
+</body>
+</html>
+

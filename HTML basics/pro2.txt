@@ -1,0 +1,51 @@
+<html>
+<head>
+
+<title>
+ my second project
+</title>
+</head>
+<hr width="1400px" color="lightgreen" size="20">
+<fieldset>
+<h1 align="center" font="bold">BLACK BOLD CREATIONz <sup>TM</sup></h1>
+<h5 align="center">If YoU Are a WEb DevolpEr</h5>
+<h5 align="center">you MuSt ObersVe Each Line In The Page CareFully</h5>
+</fieldset>
+<hr width="1400px" color="lightgreen" size="20">
+<hr color="green">
+<fieldset>
+<marquee bgcolor="lightblue" scrollamount="10" height="40" align="center">
+	<p>   ?? WelCome Web Developers This is Your First Project &#128153;... happy Coding ??</p>
+    <br>
+</marquee>
+	<h2 align="center">Iam StanDing HerE !!!</h2><br>
+
+
+<marquee scrollamount="40" onmousedown="this.stop();"  
+onmouseup="this.start();">
+	<p align="center">Iam Running Tooo faSt clicK <button onclick="alert('you have stopped me')">here!</button></a>to StoP Me....</p>
+
+</marquee>
+</fieldset>
+<br>
+<h2 align="left"> I Think iam StaNdIng leFt He<sup>Re</sup></h2>
+<h2 align="center">I <ins>thinK</ins>...Iam StanDing CENtRE heRe</h2>
+<h2 align="right">I Think Iam StanDing RiGht he<sub>Re</sub></h2>
+<fieldset>
+	<legend align="center"><h2>WHo ARE U???</h2></legend>
+
+	<p>A web developer is a programmer who specializes in, or is
+specifically engaged in, the development of World Wide Web
+applications using a client–server model. The applications
+typically use HTML, CSS and JavaScript in the client, PHP,
+ASP.NET (C#), Python or Java in the server, and http for
+communications between client and server. A web content
+management system is often used to develop and maintain
+web applications.</p>
+
+
+
+<h3 align="center">  &#10024;.....Do it Perfectly.... &#10024;</h3>
+</fieldset>
+
+<h4 align="center">&#127776;&#127776Click Here to see Second page of </h4

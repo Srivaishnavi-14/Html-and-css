@@ -1,0 +1,12 @@
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="C:\Users\LENOVO\Downloads\images.png" alt="shapes" usemap="#shapemap" width="400" height="379">
+
+<map name="shapesmap">
+ <area shape="circle" coords="55,70,78" alt="Circle" href="circle.htm"> 
+ <area shape="poly" coords="59, 31, 28, 83, 91, 83"" alt="triangle" href="triangle.htm">
+ <area shape="rect" coords="75,20,45,55" alt="rectangle" href="rectangle.htm">
+</map>
+

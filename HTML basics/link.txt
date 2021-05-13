@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+<title> style sheet</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1> HELLO WORLD!</h1>
+<h2> colourfulimage</h2>
+</body>
+</html>

@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+.navi1{
+font-size: 2rem;
+background-color: #f1f1f1;
+}
+
+.nav1 {
+padding: 0;
+margin: 0;
+list-style: none;
+display: flex;
+
+}
+
+.navi1 .nav1 li{
+	cursor: pointer;
+	padding: 0.5rem;
+	text-align: center;
+	flex:auto;
+
+}
+
+.navi1 .nav1 li:hover{
+	background-color: #555;
+	color: white;
+}
+@media all and (max-width: 600px){
+	.navi1 .nav1{
+		flex-direction: column;
+	}
+	.navi1 .nav1 li{
+		text-align: center;
+	}
+}
+
+
+.navi2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;			
+	background-color: #333;
+	color: white;
+}
+
+
+.brand{
+	font-size: 1.7rem;
+	margin: .5rem
+}
+
+
+.links .nav2{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+
+.links li{
+	list-style: none;
+
+}
+
+.links li a{
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	display: block;
+	font-family:arial;
+
+}
+
+.links li:hover{
+	background-color: #555;
+}
+
+.toggle-button{
+	position: absolute;
+	top: 0.75rem;
+	right:1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+    width: 30px;
+     height:21px;
+}
+
+.toggle-button .bar{
+height: 3px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
+
+}
+
+@media (max-width: 600px)
+{
+.toggle-button{
+	display: flex;
+}
+.links{
+	display: none;
+}
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav a:hover {
+  background-color: #4CAF50;
+  color: white;
+}
