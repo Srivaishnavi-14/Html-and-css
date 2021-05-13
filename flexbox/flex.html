@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex Box</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="container">
+   	 <header>
+   	 	<p>Pinned Carts</p>
+   	 </header>
+   	 <div class="menu">
+   	 <i class="fa fa-bars">&nbsp;&nbsp;Menu</i>
+   	 </div>
+   	 <nav class="nav-1">
+   	 	<ul>
+   	 		<li class="home"><a href="#">Home</li>
+   	 		<li class="home"><a href="#">Address</a></li>
+   	 		<li class="home"><a href="#">Portofolio</a></li>
+   	 	    <li class="home"><a href="#">About</a></li>
+   	 	    <li class="link"><a href="#"><i class="fa fa-facebook"></i></a>
+   	 	    </li>
+   	 	    <li class="link"><a href="#"><i class="fa fa-twitter"></i></a>
+   	 	    </li>
+   	 	    <li class="link"><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li class="link"><a href="#"><i class="fa fa-github"></i></a>
+   	 	    </li>
+   	 	</ul>
+   	 </nav>
+   	 <section class="image">
+   	 	<img src="giphy.gif">
+   	 </section>
+   	 <section class="words">
+   	 	<p>Web developer tools</p>
+   	 	<ul>
+   	 	<li class="app"><a href="#"><i class="fa fa-codepen"></i></a></li>
+   	 	<li class="app"><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
+   	 	<li class="app"><a href="#"><i class="fa fa-css3"></i></a></li>
+   	 	<li class="app"><a href="#"><i class="fa fa-html5"></i></a></li>
+   	 	<li class="app"><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></a></i></li>
+   	 	<li class="app"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></a></i></li>
+   	 	</ul>
+   	 
+   	 </section>
+   	 <section class="form">
+   	 	<form class="Sign">
+   	 	<input type="text" placeholder="Enter Name">
+   	 	<input type="Password" placeholder="Password">
+   	 	<input type="submit" value="Sign In">
+   	 </form>
+   	 </section>
+   	 <footer>
+   	 	<p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright</p>
+   	 </footer>
+   </div>
+</body>
+</html>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.menu').click(function(){
+  			$('.nav-1').slideToggle('active');
+  		})
+  	})
+  </script>

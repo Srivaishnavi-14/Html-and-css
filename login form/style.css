@@ -1,0 +1,490 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'poppins',sans-serif;
+}
+
+.loading{
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+	background:#fff;
+	width: 100%;
+	height: 100%;
+}
+
+.load{
+	border:0 solid transparent;
+	border-radius:50%;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: calc(50vh-75px);
+	left: calc(50vw-75px);
+
+}
+
+.load:before, .load:after{
+	content: '';
+	border:1em solid #f3f1af;
+	border-radius: 50%;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: loader 2s linear infinite;
+	opacity: 0;
+
+}
+
+.load:before{
+	animation-delay: .5s;
+}
+
+@keyframes loader{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+body{
+	background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(bk.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.5s ease;
+
+
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+    min-height: 8vh;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	padding-right: 1px;
+	position: sticky;
+	top: 0;
+	z-index: 99;
+}
+
+nav .navlinks{
+display: flex;
+justify-content: space-around;
+width: 50%;
+
+}
+nav .navlinks li{
+	list-style: none;
+}
+nav .navlinks .icon{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 25px;
+}
+nav .navlinks .loginbtn{
+	text-decoration: none;
+	font-size: 25px;
+	background: none;
+	border: none;
+	outline: none;
+	color: white;
+
+}
+nav .navlinks .icon:hover{
+	color: aqua;
+}
+nav .navlinks .loginbtn:hover{
+	color:aqua;
+}
+nav .logo
+{
+    text-decoration: none;
+    color:white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+padding-left: 2px;
+font-weight: bold;
+}
+
+nav .lines .line{
+	width: 25px;
+	height: 5px;
+	background-color: white;
+	margin: 5px;
+	transition: all .5s ease;
+
+}
+
+nav.down{
+	background-color:#ffffff;
+	padding: 10px 0px;
+	transition: 0.5s ease;
+	padding-top: 10px;
+}
+
+nav.down .navlinks .icon{
+	color: black;
+}
+nav.down .navlinks .loginbtn{
+	color: black;
+}
+
+nav.down .logo{
+	color: black;
+}
+nav.down .navlinks:hover{
+	color: aqua;
+}
+nav.down .navlinks .loginbtn:hover{
+color: aqua;
+}
+
+section{
+	position: relative;
+	min-height: 100vh;
+	/*background:#fce4ec;*/
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	
+}
+
+section .container{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	/*background:#fff;*/
+	box-shadow: 0 15px 80px rgba(0,0,0,0.9);
+    overflow: hidden;
+    visibility: hidden;
+	opacity: 0;
+
+}
+
+ .container.show{
+	opacity: 1;
+	visibility: visible;
+}
+section .container .user{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	display: flex;
+
+}
+
+section .container .user .imgbx{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background:hsla(201,100%,7%,0.9);
+	transition:0.5s;
+}
+
+section .container .user .imgbx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+
+}
+
+
+section .container .user .formbx{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	background-color:#040407;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	transition:0.5s;
+
+}
+ section .container .user .formbx form h2{
+font-size: 18px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 2px;
+
+width: 100%;
+text-align: center;
+margin-bottom: 10px;
+
+color: #555;
+float: left;
+
+
+ }
+
+section .container .user .formbx form .tex{
+	position: relative;
+	width: 100%;
+	padding: 10px;
+	background:none;
+	border-bottom: 1px solid #f3f1af;
+	color: white;
+	outline: none;
+	box-shadow: none;
+	margin: 8px 0;
+	font-size: 14px;
+	letter-spacing: 1px;
+	font-weight: 300;
+	transition:  0.5s;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+}
+section .container .user .formbx form .tex:hover{
+	border: 1px solid black;
+
+}
+
+
+section .container .user .formbx form .sign{
+	position: relative;
+	margin-top: 20px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 300;
+
+}
+
+section .container .user .formbx form input[type="button"]{
+	width: 80px;
+	max-width: 100px;
+	background:#f3f1af;
+	color: #555;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: 0.5s;
+	padding: 10px;
+	margin-top: 3px;
+	outline: none;
+	border:none;
+
+}
+
+section .container .user .formbx form input[type="button"]:hover{
+
+background-color: #040407;
+color: white;
+
+}
+
+
+section .container .user .formbx form .sign
+{
+
+	position: relative;
+	margin-top: 20px;
+	font-size: 10px;
+	letter-spacing: 1px;
+	color: #555;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+section .container .user .formbx form .sign .link{
+	text-decoration:none;
+	font-weight: none;
+	color: #f3f1af;
+}
+
+
+section .container .signup
+{
+pointer-events: none;
+}
+section .container.active .signup
+{
+pointer-events: initial;
+}
+section .container .signup .formbx
+{
+	left: 100%;
+}
+section .container.active .signup .formbx
+{
+	left: 0;
+}
+section .container .signup .imgbx
+{
+	left: -100%;
+}
+section .container.active .signup .imgbx
+{
+	left: 0;
+}
+
+
+
+section .container .signin .formbx
+{
+	left: 0%;
+}
+section .container.active .signin .formbx
+{
+ 	left:-100%;
+}
+
+section .container .signin .imgbx
+{
+ 	left: 0%;
+}
+
+section .container.active .signin .imgbx
+{
+	left: 100%;
+}
+@media(max-width: 800px)
+{
+	section .container{
+        max-width: 400px;
+	}
+	section .container .imgbx{
+		display: none;
+	}
+	section .container .user .formbx{
+		width: 100%; 
+	}
+	
+}
+@media(max-width: 1024px){
+	
+	.navlinks{
+		width: 60%;
+	}
+
+
+}
+@media(min-width: 800px){
+	.lines{
+		display: none;
+
+	}
+}
+
+@media(max-width:885px){
+	body{
+		overflow-x: hidden;
+	}
+	.navlinks{
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 14vh;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 20%;
+		transform: translateX(100%);
+		z-index: 999;
+		transition: transform 0.5s ease-in;
+
+
+	}
+nav .navlinks .icon{
+	color: black;
+}
+nav .navlinks .logo{
+	color: black;
+}
+nav .navlinks .loginbtn{
+	color: black;
+}
+nav.down .navlinks .icon{
+	color: black;
+}
+nav.down .navlinks .loginbtn{
+	color: black;
+}
+nav.down .navlinks{
+	top: 8vh;
+	background-color: white;
+	transition: .5s ease;
+}
+nav.down .logo{
+	color: black;
+}
+nav.down .line1{
+	background:black;
+}
+nav.down .line2{
+	
+	background: black;
+}
+nav.down .line3{
+	
+	background: black;
+}
+
+.navlinks li{
+	opacity: 1;
+
+}
+.lines{
+	display: block;
+	cursor: pointer;
+  }
+}
+
+.navactive{
+	transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+	from{
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+
+}
+
+.lines.change .line1{
+	transform: rotate(-45deg) translate(-7px,7px);
+}
+.lines.change .line2{
+opacity: 0;
+}
+.lines.change .line3{
+	transform: rotate(45deg) translate(-7px,-7px);
+}
+
+
+
+

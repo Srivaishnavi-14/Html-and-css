@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<meta charset="utf-8" width="device-width" initial-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="loading">
+		<div class="load"></div>
+	</div>
+
+	<nav>
+	<div class="logo">
+       <h3>TECHIE</h3>    
+          </div>
+            <ul class="navlinks">
+                    <li><a href='#' class="icon">Home</a></li>
+                    <li><a href="#" class="icon">About Us</a></li>
+                    <li><a href="#" class="icon">Services</a></li>
+                    <li><button class="loginbtn">Login</button></li>
+            </ul>
+                <div class="lines" onclick="changeToggle();">
+                	<div class="line line1"></div>
+                	<div class="line line2"></div>
+                	<div class="line line3"></div>
+                </div>		
+           
+        </div>
+    </nav>
+<section>
+	<div class="container">
+		<div class="user signin">
+			<div class="imgbx">
+				<img src="girl.jpg" alt="">
+			</div>
+				<div class="formbx">
+			      <form>
+				    <h2>LOGIN</h2>
+					<input class="tex" type="Email" name="" placeholder="Username" required>
+			        <input class="tex" type="password" name="" placeholder="password" required>
+		            <input  class="btn" type="button" name="submit" value="Login">
+					<p class="sign">Don't have an account ? <a href="#" class="link" onclick="toggleForm();">Sign Up.</a></p>
+			
+		         </form>
+	       </div>
+	    </div>
+   
+            <div class="user signup">
+				<div class="formbx">
+						 <form>
+							<h2>Create an Account</h2>
+							<input class="tex" type="text" name="" placeholder="username" required>
+							<input class="tex" type="text" name="" placeholder="Rollno" required>
+							<input class="tex" type="Email" name="" placeholder="Email address" required>
+							<input class="tex" type="password" name="" placeholder="password" required>
+						    <input class="tex" type="password" name="" placeholder="Confirm password" required>
+					        <input  class="btn" type="button" name="submit" value="Sign Up">
+						    <p class="sign">Already have an account ? <a href="#" class="link" 
+						    	onclick="toggleForm();">Sign In.</a></p>
+						</form>
+				       	 </div>
+				       	 <div class="imgbx">
+							<img src="girl1.jpg" alt=""></div>
+							
+				    </div>
+			    </div>
+			</section>
+			
+		</body>
+   </html>
+
+   <script>
+   	function toggleForm(){
+   		var container=document.querySelector('.container');
+   		container.classList.toggle('active');
+   	}
+   </script>
+   
+<script>
+	const hide=()=>{
+		const hideBox=document.querySelector('.loginbtn');
+		const cont=document.querySelector('.container');
+		hideBox.addEventListener('click',function(){
+			cont.classList.toggle('show');
+		});
+	}
+
+	hide();
+</script>
+
+   <script type="text/javascript">
+   	const navSlide=()=>{
+   		const togglenav=document.querySelector('.lines');
+   		const navi=document.querySelector('.navlinks');
+   		const navlink=document.querySelector('.navlinks li');
+   		
+   		togglenav.addEventListener('click', function () {
+                
+        navi.classList.toggle('navactive');
+   			
+   	
+   		navlink.forEach((link ,index) => {
+   			if(link.style.animation){
+   				link.style.animation='';
+   			}
+   			else{
+   			link.style.animation='navLinkFade 0.5s forwards $(index)/7s';
+   		}
+   			
+   	});
+
+   
+   }); 
+}
+navSlide();
+			var toggle=document.querySelector('.lines');
+		function changeToggle(){
+
+		toggle.classList.toggle('change');
+
+		}
+
+
+
+   </script>
+
+<script>
+		
+		
+	    window.addEventListener("scroll" , function(){
+		var navigation=document.querySelector("nav");
+
+		navigation.classList.toggle("down",window.scrollY>0);
+
+	});
+
+	
+</script>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script >
+	setTimeout(function(){
+		$('.loading').fadeToggle();
+	},2000);
+</script>
+

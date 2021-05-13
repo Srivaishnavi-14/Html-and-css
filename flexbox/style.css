@@ -1,0 +1,288 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+body{
+	background-image: linear-gradient( #e3e9ed, #f0fa97);
+}
+.container{
+	margin: 10px auto;
+	max-width: 800px;
+}
+header, section, nav, footer{
+
+	background-color: rgb(0,0,0,0.1);
+}
+li{
+	list-style: none;
+}
+header{
+	margin-bottom: 10px;
+}
+header p{
+	letter-spacing: 2px;
+	font-weight: 300;
+	font-size: 21px;
+	margin-bottom: 10px;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+.menu{
+	background-color: rgb(0,0,0,0.1);
+	margin-bottom: 10px; 
+	text-align: center;
+	display: none;
+}
+.menu i{
+	padding: 15px 2px;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 1px;
+
+}
+.nav-1{
+	margin-bottom: 10px;
+}
+.nav-1 ul{
+	display: flex;
+	justify-content:space-around;
+	
+	color: white;
+}
+.nav-1 li a{
+	color: white;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 17px;
+	
+}
+.home{
+	flex: 3 ;
+	text-align: center;
+	padding: 15px 0;
+}
+.link{
+	flex-grow: 1;
+	text-align: center;
+	padding: 15px 0;
+}
+.fa-facebook{
+	color: rgb(56 148 252);
+}
+.fa-instagram{
+	color: rgb(194 60 141);
+}
+.fa-twitter{
+	color: rgb(82 158 204);
+}
+.fa-github{
+	color: white;
+}
+.nav-1 ul li:hover{
+	background-color:rgb(0,0,0,0.2);
+}
+.image img{
+	width: 100%;
+	padding: 15px;
+}
+.image{
+	margin-bottom: 10px;
+}
+.words{
+	margin-bottom: 10px;
+}
+.words p{
+font-weight: 500;
+font-size: 19px;
+text-align: center;
+padding: 15px;
+color:white;
+letter-spacing: 1px;
+
+}
+.words ul{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 20px;
+	padding-top: 15px;
+}
+
+
+.fa-codepen{
+	width: 35px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 7px;
+	background-color: black;
+
+}
+.fa-stack-overflow{
+	width: 35px;
+	height: 30px;
+	color: #ec7c22;
+	text-align: center;
+	padding-top: 7px;
+	background-color:#f7f7f7;
+	
+}
+.fa-css3{
+	width: 35px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 4px;
+	border:4px solid #1a6fb4;
+	background-color:#1b84c1;
+	
+}
+.fa-html5{
+	width: 35px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 2px;
+	border:4px solid rgb(223 79 37);
+background-color: rgb(233 98 40);
+
+}
+.fa-youtube-play{
+	width: 35px;
+	height: 30px;
+	color: #f70000;
+	text-align: center;
+	padding-top: 7px;
+background:white ;
+
+}
+.fa-linkedin{
+	width: 35px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 7px;
+background:#0073b1;
+
+}
+.words ul li:hover{
+opacity: 0.7;
+}
+
+.form{
+	margin-bottom: 10px;
+	text-align: center;
+	
+}
+
+input{
+padding: 7px;
+margin:15px 5px;
+outline: none;
+border:none;
+}
+
+footer p{
+	padding: 40px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	letter-spacing: 1px; 
+}
+@media(max-width: 700px){
+	.nav-1 ul{
+		flex-wrap: wrap;
+	}
+
+	.nav-1 ul .home{
+		flex:1 1 50%;
+	}
+	.nav-1 ul .links{
+		flex: 1 1 25%;
+	}
+	.words ul{
+		flex-wrap: wrap;
+		
+	}
+	.words ul li{
+		margin:10px 0;
+		flex:1 1 50%;
+	}
+	.fa-codepen, .fa-stack-overflow, .fa-youtube-play, .fa-linkedin
+	{
+		padding-left: 10px;
+	}
+	.fa-html5, .fa-css3{
+		padding-left: 6px;
+	}
+	.fa-codepen::after{
+		content: 'Codepen';
+		margin-left: 20px;
+		color: #9b8c8c;
+	}
+
+	.fa-stack-overflow::after{
+		content:'stack';
+		color: #9b8c8c;
+		margin-left: 20px;
+	}
+	.fa-css3::after{
+		content:'Css3';
+		color: #9b8c8c;
+		margin-left: 20px;
+	}
+	.fa-html5::after{
+		content:'Html5';
+		color: #9b8c8c;
+		margin-left: 20px;
+	}
+	.fa-linkedin::after{
+		content:'linkedIn';
+		color: #9b8c8c;
+		margin-left: 20px;
+	}
+	.fa-youtube-play::after{
+		content:'youtube';
+		color: #9b8c8c;
+		margin-left: 20px;
+	}
+}
+
+@media(max-width:500px){
+ 	.container{
+ 		display: flex;
+ 	flex-direction: column;
+ }
+
+ .container > *{
+ 	order:1;
+ }
+ .menu{
+ 	display:block;
+ 	order: -1;
+ 	margin-bottom: 0;
+ 	cursor: pointer;
+ }
+ header{
+ 	margin-top: 10px;
+ }
+ .menu:hover:active{
+
+ 	background-color: rgb(0,0,0,0.3);
+ }
+ .nav-1{
+ 	order: 0;
+ 	display: none;
+ }
+ .nav-1 ul .home{
+ 	flex:1 1 100%;
+ }
+ .nav-1.active{
+ 	display:block;
+ 	margin-top: 0;
+ }
+
+}
